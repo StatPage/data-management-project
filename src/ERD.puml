@@ -1,0 +1,34 @@
+@startuml Daangn ER diagram
+skinparam Style strictuml
+skinparam DefaultFontName Calibri
+skinparam DefaultFontColor Brown
+skinparam DefaultFontStyle bold
+skinparam handwritten true
+skinparam class {
+BackgroundColor Orange
+ArrowColor SeaGreen
+BorderColor SpringGreen
+}
+entity "All_Data" as es01 {
+    *local_name
+    __
+    Item
+    Count
+    Like
+    Chat
+    Date
+}
+
+entity "Local_Data" as es02 {
+    *local_name
+    __
+    Item_category
+    Count_sum
+    Like_sum
+    Chat_sum
+    Date_period
+}
+
+es01 }|--|| es02
+
+@enduml
